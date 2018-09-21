@@ -1,0 +1,76 @@
+ACC - Accounting
+ACC221
+Introduction to Financial Accounting
+4 Semester Credits
+Introduction to business activities, basic concepts and fundamentals of accounting, the accounting cycle, and
+preparation of financial statements.
+Core Curriculum Component: None
+Prerequisite(s): None
+ACC222
+Introduction to Managerial Accounting
+4 Semester Credits
+A continuation of ACC 221. Introduction to cost accounting for manufacturing. Basic concepts and fundamentals of
+managerial accounting, planning and controlling processes, decision-making, and behavioral considerations.
+Core Curriculum Component: None
+Prerequisite(s): ACC221(Introduction to Financial Accounting)
+ACC295
+Topics
+4 Semester Credits
+Lectures, discussions, meetings with members of the staff or visiting faculty regarding research methodology and
+readings in the areas of business administration.
+Core Curriculum Component: None
+Prerequisite(s): CONSENT(Consent of Instructor)
+ACC299
+Directed Study
+4 Semester Credits
+Core Curriculum Component: None
+Prerequisite(s): None
+ACC322
+Intermediate Accounting I
+4 Semester Credits
+An analysis of financial accounting with emphasis on accounting theory pertaining to financial statements, income
+concepts, valuation concepts, FASB statements, and other relevant issues as applied to assets.
+Core Curriculum Component: None
+Prerequisite(s): ACC222(Introduction to Managerial Accounting)
+2
+ACC323
+Intermediate Accounting II
+4 Semester Credits
+A continuation of ACC 322. An analysis of financial accounting with emphasis on accounting theory pertaining to
+financial statements, income concepts, valuation concepts, FASB statements, and other relevant issues as applied to
+liabilities and stockholders’ equity.
+Core Curriculum Component: None
+Prerequisite(s): ACC322(Intermediate Accounting I)
+ACC324
+Managerial Cost Accounting
+4 Semester Credits
+Accounting tools for heavy manufacturing systems as well as for managerial decision making. Planning, budgeting,
+standard cost systems, as well as other quantitative and behavioral topics.
+Core Curriculum Component: None
+Prerequisite(s): 1 of BUS200(Exploring Business as a Vocation), BUS242(Principles of Management); 1 of
+MAT163(Introductory Statistics), MAT373(Probability and Statistics I), MIS379(Quantitative Methods for Business and
+Economics); ACC221(Introduction to Financial Accounting), ACC222(Introduction to Managerial Accounting),
+MKT252(Principles of Marketing)
+ACC326
+Tax Accounting
+4 Semester Credits
+The more common and important provisions of planning and compliance for income taxes.
+Core Curriculum Component: None
+Prerequisite(s): ACC221(Introduction to Financial Accounting), ECO112(Principles of Macroeconomics),
+ECO113(Principles of Microeconomics)
+ACC423
+Auditing
+4 Semester Credits
+Internal and external auditing procedures. Emphasis on the CPA’s role to form the basis of opinion on a set of financial
+statements.
+Core Curriculum Component: None
+Prerequisite(s): 1 of ENG111(Effective Writing), ENL111(Effective Writing), ENL112(Advanced Effective Writing),
+HON111(Effective Writing for Liberating Letters), WPL(Writing Placement Level); ACC323(Intermediate Accounting II)
+ACC425
+Advanced Accounting
+4 Semester Credits
+Accounting for business combinations, consolidations, governmental accounting, partnership accounting, and fund
+accounting.
+Core Curriculum Component: None
+3
+Prerequisite(s): ACC323(Intermediate Accounting II)
