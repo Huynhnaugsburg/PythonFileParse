@@ -22,7 +22,6 @@ def getcourseobject():
     uri = 'mongodb://bran:bran123@ds159772.mlab.com:59772/course-organizer-augsburg'
     client = MongoClient(uri)
     db = client.get_database("course-organizer-augsburg")
-    collection = db.courses
 
     for i,v in enumerate(classdeptshort):
         db.courses.insert_one(
@@ -88,12 +87,6 @@ def getclassdeptlong():
             for num, line in enumerate(file):
                 if key in line and " " in line[5:6] and " " in line[3:4]:
                     classdeptlong.append(line)
-
-def connectToMongo():
-    uri = 'mongodb://bran:bran123@ds159772.mlab.com:59772/course-organizer-augsburg'
-    client = MongoClient(uri)
-    db = client['course-organizer-augsburg']
-    collection = db.courses
 
 
 main()
