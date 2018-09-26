@@ -1,3 +1,5 @@
+import pymongo
+
 classdeptshort = []
 classnum = []
 classtitle = []
@@ -66,5 +68,9 @@ def getclassdeptlong():
                 if key in line and " " in line[5:6] and " " in line[3:4]:
                     classdeptlong.append(line)
 
+def connectToMongo():
+    uri = 'mongodb://bran:bran123@ds159772.mlab.com:59772/course-organizer-augsburg'
+    client = pymongo.MongoClient(uri)
 
+    db = client.get_default_database()
 main()
