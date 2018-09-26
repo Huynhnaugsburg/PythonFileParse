@@ -1,5 +1,4 @@
-import pymongo
-
+from pymongo import MongoClient
 classdeptshort = []
 classnum = []
 classtitle = []
@@ -8,14 +7,35 @@ classdesc = []
 classcore = []
 classprereq = []
 classdeptlong = []
-
+classobject = []
 
 def main():
-    getclassdeptandnum()
-    getclasstitleandcredits()
-    getclassdescandcoreandprereq()
-    getclassdeptlong()
+    getcourseobject()
 
+
+
+def getcourseobject():
+    uri = 'mongodb://bran:bran123@ds159772.mlab.com:59772/course-organizer-augsburg'
+    client = MongoClient(uri)
+    db = client['course-organizer-augsburg']
+    collection = db.courses
+
+    for i in enumerate(classdeptshort):
+        try:
+            db.courses.insert_one(
+            {
+                'CourseDepartmentLong': classdeptlong[i],
+                'CourseDepartmentShort': classdeptshort[i],
+                'CourseNumber': classnum[i],
+                'CourseTitle': classtitle[i],
+                'CourseCredit': classcore[i],
+                'CourseDescription': classdesc[i],
+                'CourseCore': classcore[i],
+                'CoursePrerequisite': classprereq[i],
+            }
+            )
+        except Exception, e:
+            print str(e)
 
 
 def getclassdeptandnum():
@@ -70,7 +90,9 @@ def getclassdeptlong():
 
 def connectToMongo():
     uri = 'mongodb://bran:bran123@ds159772.mlab.com:59772/course-organizer-augsburg'
-    client = pymongo.MongoClient(uri)
+    client = MongoClient(uri)
+    db = client['course-organizer-augsburg']
+    collection = db.courses
 
-    db = client.get_default_database()
+
 main()
