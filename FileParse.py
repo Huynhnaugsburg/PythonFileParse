@@ -10,6 +10,10 @@ classdeptlong = []
 classobject = []
 
 def main():
+    getclassdeptandnum()
+    getclasstitleandcredits()
+    getclassdescandcoreandprereq()
+    getclassdeptlong()
     getcourseobject()
 
 
@@ -17,25 +21,22 @@ def main():
 def getcourseobject():
     uri = 'mongodb://bran:bran123@ds159772.mlab.com:59772/course-organizer-augsburg'
     client = MongoClient(uri)
-    db = client['course-organizer-augsburg']
+    db = client.get_database("course-organizer-augsburg")
     collection = db.courses
 
-    for i in enumerate(classdeptshort):
-        try:
-            db.courses.insert_one(
-            {
-                'CourseDepartmentLong': classdeptlong[i],
-                'CourseDepartmentShort': classdeptshort[i],
-                'CourseNumber': classnum[i],
-                'CourseTitle': classtitle[i],
-                'CourseCredit': classcore[i],
-                'CourseDescription': classdesc[i],
-                'CourseCore': classcore[i],
-                'CoursePrerequisite': classprereq[i],
-            }
-            )
-        except Exception, e:
-            print str(e)
+    for i,v in enumerate(classdeptshort):
+        db.courses.insert_one(
+        {
+            'CourseDepartmentLong': classdeptlong[i],
+            'CourseDepartmentShort': classdeptshort[i],
+            'CourseNumber': classnum[i],
+            'CourseTitle': classtitle[i],
+            'CourseCredit': classcore[i],
+            'CourseDescription': classdesc[i],
+            'CourseCore': classcore[i],
+            'CoursePrerequisite': classprereq[i],
+        })
+
 
 
 def getclassdeptandnum():
