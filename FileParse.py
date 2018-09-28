@@ -30,7 +30,7 @@ def getcourseobject():
             'CourseDepartmentShort': classdeptshort[i],
             'CourseNumber': classnum[i],
             'CourseTitle': classtitle[i],
-            'CourseCredit': classcore[i],
+            'CourseCredit': classcredits[i],
             'CourseDescription': classdesc[i],
             'CourseCore': classcore[i],
             'CoursePrerequisite': classprereq[i],
