@@ -15,10 +15,9 @@ def main():
     getclassdeptandnum()
     getclasstitleandcredits()
     getclassdescandcoreandprereq()
-    print(classdeptshortandnum)
     getclassdeptlong()
     getclassprereq()
-
+    print(classprereq)
 
 def getcourseobject():
     uri = 'mongodb://bran:bran123@ds159772.mlab.com:59772/course-organizer-augsburg'
@@ -113,7 +112,7 @@ def getclassprereq():
                             temp.remove(course)
                             temp.append(id)
                         except ValueError:
-                            print("CDNE")
+                            print("Could Not Determine Course")
                 print(temp)
 
 
