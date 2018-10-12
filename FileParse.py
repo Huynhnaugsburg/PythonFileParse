@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+
 classdeptshort = []
 classnum = []
 classdeptshortandnum = []
@@ -17,7 +18,7 @@ def main():
     getclassdescandcoreandprereq()
     getclassdeptlong()
     getclassprereq()
-    print(classprereq)
+    getcourseobject()
 
 def getcourseobject():
     uri = 'mongodb://bran:bran123@ds159772.mlab.com:59772/course-organizer-augsburg'
@@ -113,7 +114,7 @@ def getclassprereq():
                             temp.append(id)
                         except ValueError:
                             print("Could Not Determine Course")
-                print(temp)
+        classprereq[x] = temp
 
 
 main()
